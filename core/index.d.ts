@@ -423,7 +423,7 @@ export interface PromptLog {
   completion: string;
 }
 
-export type MessageModes = "chat" | "edit" | "agent";
+export type MessageModes = "chat" | "agent";
 
 export type ToolStatus =
   | "generating"
@@ -1240,6 +1240,7 @@ export interface StreamDiffLinesPayload {
   language: string | undefined;
   modelTitle: string | undefined;
   includeRulesInSystemMessage: boolean;
+  fileUri?: string;
 }
 
 export interface HighlightedCodePayload {
